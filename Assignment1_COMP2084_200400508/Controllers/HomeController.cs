@@ -17,7 +17,7 @@ namespace Assignment1_COMP2084_200400508.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Hello and welcome to the wizard library! Browse through our selection of tomes and discover the many spells within!";
+            ViewData["Message"] = "Our collection of tomes and spells is gathered from dungeons and wizards from across the land. We grant access to spells for complete beginners all the way up to seasoned casters!";
 
             return View();
         }
