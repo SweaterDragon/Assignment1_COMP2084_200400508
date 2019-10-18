@@ -3,3 +3,6 @@ as a wizard library, using a database to hold information about tomes and spells
 
 NOTE: The "master" branch contains an error, and upon reverting to a previous commit github would no longer
 allow me to make commits. Thus, the current branch "newmaster" was created.
+
+Link to live website on Azure: https://wizardlibrary-comp2084-assignment1.azurewebsites.net/
+Link to github: https://github.com/SweaterDragon/Assignment1_COMP2084_200400508
