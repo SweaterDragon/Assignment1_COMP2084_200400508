@@ -17,19 +17,29 @@ namespace Assignment1_COMP2084_200400508.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Hello and welcome to the wizard library! Browse through our selection of tomes and discover the many spells within!";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Adam Stephens 200400508.";
 
             return View();
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Tome()
+        {
+            return View();
+        }
+
+        public IActionResult Spell()
         {
             return View();
         }

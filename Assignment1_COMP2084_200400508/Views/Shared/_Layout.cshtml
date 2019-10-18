@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Assignment1_COMP2084_200400508</title>
+    <!-- Page title -->
+    <title>@ViewData["Title"] Wizard Library</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -26,13 +27,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Assignment1_COMP2084_200400508</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Wizard Library</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav"> <!-- Navbar links here -->
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Tomes" asp-action="Index">Tomes</a></li>
+                    <li><a asp-area="" asp-controller="Spells" asp-action="Index">Spells</a></li>
                 </ul>
                 <partial name="_LoginPartial" />
             </div>
@@ -45,7 +46,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - Assignment1_COMP2084_200400508</p>
+            <p>&copy; Adam Stephens 200400508 Server-Side Scripting-ASP.NET COMP2084</p>
         </footer>
     </div>
 
