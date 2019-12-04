@@ -7,7 +7,7 @@ using Assignment1_COMP2084_200400508.Models;
 
 namespace Assignment1_COMP2084_200400508.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
