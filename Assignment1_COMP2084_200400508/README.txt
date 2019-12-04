@@ -6,7 +6,7 @@ This is Assignment 2, but since it was built off of "Assignment1_COMP2084_200400
 The "master" branch contains an error, and upon reverting to a previous commit github would no longer
 allow me to make commits. Thus, the current branch "newmaster" was created.
 
-The google login is unfinished, and does not function
+Several parts of this application are unfinished
 
-The free trial on azure has expired since part 1 of the assignment.
+The free trial on azure has expired since part 1 of the assignment. The database is temporarily being paid for.
 Link to github: https://github.com/SweaterDragon/Assignment1_COMP2084_200400508
