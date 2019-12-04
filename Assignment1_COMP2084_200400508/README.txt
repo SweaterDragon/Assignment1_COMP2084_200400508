@@ -1,8 +1,10 @@
 ﻿This is a basic MVC web application, made as an assignment for a college course. The application functions
 as a wizard library, using a database to hold information about tomes and spells.
 
+This is Assignment 2, but since it was built off of "Assignment1_COMP2084_200400508", the name remains
+
 NOTE: The "master" branch contains an error, and upon reverting to a previous commit github would no longer
 allow me to make commits. Thus, the current branch "newmaster" was created.
 
-Link to live website on Azure: https://wizardlibrary-comp2084-assignment1.azurewebsites.net/
+The free trial on azure has expired since part 1 of the assignment.
 Link to github: https://github.com/SweaterDragon/Assignment1_COMP2084_200400508
