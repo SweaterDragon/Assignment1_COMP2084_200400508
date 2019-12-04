@@ -13,6 +13,7 @@ namespace Assignment1_COMP2084_200400508.Data
             : base(options)
         {
         }
+
         public DbSet<Assignment1_COMP2084_200400508.Models.Spell> Spell { get; set; }
         public DbSet<Assignment1_COMP2084_200400508.Models.Tome> Tome { get; set; }
     }

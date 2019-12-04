@@ -59,6 +59,19 @@ namespace Assignment1_COMP2084_200400508.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("TomeId,Name,Pages,Description,IsRented")] Tome tome)
         {
+            if (tome.Pages <= 0) throw new InvalidOperationException();
+
+            if (tome.TomeId <= 0) throw new InvalidOperationException();
+
+            if (tome.Name == null) throw new InvalidOperationException();
+
+            if (tome.Name.Length == 0) throw new InvalidOperationException();
+
+            if (tome.Description == null) throw new InvalidOperationException();
+
+            if (tome.Description.Length == 0) throw new InvalidOperationException();
+
+
             if (ModelState.IsValid)
             {
                 _context.Add(tome);
