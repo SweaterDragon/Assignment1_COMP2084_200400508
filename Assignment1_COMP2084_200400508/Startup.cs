@@ -48,6 +48,14 @@ namespace Assignment1_COMP2084_200400508
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddAuthentication()
+                .AddGoogle(options =>
+                {
+                    options.ClientId = "943808470865-ar84jbvd5c7l5s23m250gn1lmq1l0ss5.apps.googleusercontent.com";
+                    options.ClientSecret = "mVKiNiVAjWOMCihiQ2MVxATh";
+
+                });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

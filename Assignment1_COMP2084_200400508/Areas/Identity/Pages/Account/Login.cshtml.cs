@@ -47,6 +47,10 @@ namespace Assignment1_COMP2084_200400508.Areas.Identity.Pages.Account
 
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }
+            // Added for google auth
+            public string ReturnUrl { get; set; }
+            // Added for google auth
+            public IList<AuthenticationScheme> ExternalLogins { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
