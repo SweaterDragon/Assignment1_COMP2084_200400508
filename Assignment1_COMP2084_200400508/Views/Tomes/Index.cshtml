@@ -5,10 +5,12 @@
 }
 
 <h2>Index</h2>
-
+@if (User.Identity.IsAuthenticated)
+{
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+}
 <table class="table">
     <thead>
         <tr>
@@ -42,11 +44,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.IsRented)
             </td>
+@if(User.Identity.IsAuthenticated) { 
             <td>
                 <a asp-action="Edit" asp-route-id="@item.TomeId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.TomeId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.TomeId">Delete</a>
             </td>
+}
         </tr>
 }
     </tbody>
